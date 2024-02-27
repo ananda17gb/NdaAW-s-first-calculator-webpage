@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn2.vectorstock.com/i/1000x1000/24/81/colorful-funny-calculator-object-kawaii-with-arms-vector-19392481.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="resultView" class="result"></div>
+    <div class="pad">
+      <button class="item angka1" onclick="appendButtonValue('1')">1</button>
+      <button class="item angka2" onclick="appendButtonValue('2')">2</button>
+      <button class="item angka3" onclick="appendButtonValue('3')">3</button>
+      <button class="item angka4" onclick="appendButtonValue('4')">4</button>
+      <button class="item angka5" onclick="appendButtonValue('5')">5</button>
+      <button class="item angka6" onclick="appendButtonValue('6')">6</button>
+      <button class="item angka7" onclick="appendButtonValue('7')">7</button>
+      <button class="item angka8" onclick="appendButtonValue('8')">8</button>
+      <button class="item angka9" onclick="appendButtonValue('9')">9</button>
+      <button class="item angka0" onclick="appendButtonValue('0')">0</button>
+      <button class="item operasi1" onclick="appendButtonValue('+')">+</button>
+      <button class="item operasi1" onclick="appendButtonValue('-')">-</button>
+      <button class="item operasi2" onclick="appendButtonValue('*')">*</button>
+      <button class="item operasi2" onclick="appendButtonValue('/')">/</button>
+      <button class="item enter" onclick="appendButtonValue('enter')">
+        Enter
+      </button>
+      <button class="item backspace" onclick="appendButtonValue('backspace')">
+        Backspace
+      </button>
+    </div>
+    <div id="array"></div>
+    <img
+      class="calculator"
+      src="https://cdn2.vectorstock.com/i/1000x1000/24/81/colorful-funny-calculator-object-kawaii-with-arms-vector-19392481.jpg"
+      alt="Calculator logo"
+    />
+    <div class="footer">
+      <p>Made by NdaAW</p>
+      <p>with the help of ChatGPT, Perplexity AI, and some other websites.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
